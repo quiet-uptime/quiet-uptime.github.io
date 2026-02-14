@@ -45,3 +45,33 @@
   .site-title, .site-title:visited { color: rgba(255,255,255,.92); }
   .site-nav .page-link { color: rgba(255,255,255,.86); }
 }
+
+
+/* Quiet Uptime landing + feed */
+.qu-hero { padding: .75rem 0 1.25rem; }
+.qu-hero h1 { margin: .2rem 0 .35rem; }
+.qu-sub { font-family: var(--qu-sans); color: rgba(0,0,0,.62); margin: 0 0 .75rem; }
+.qu-intro { margin: 0 0 1.05rem; }
+.qu-actions { display:flex; gap:.6rem; flex-wrap:wrap; margin: .25rem 0 0; }
+.qu-btn { font-family: var(--qu-sans); font-size: .95rem; padding: .55rem .85rem; border-radius: 999px; border: 1px solid rgba(0,0,0,.14); color: rgba(0,0,0,.78); background: #fff; }
+.qu-btn:hover { text-decoration:none; border-color: rgba(0,0,0,.24); }
+.qu-btn.primary { background: #111; color:#fff; border-color:#111; }
+.qu-btn.primary:hover { background:#000; }
+.qu-btn.ghost { background: transparent; }
+
+.qu-feed h2 { font-family: var(--qu-sans); font-size: 1.1rem; margin: 0 0 .75rem; }
+.qu-postlist { list-style:none; margin:0; padding:0; }
+.qu-post { padding: .9rem 0; border-bottom: 1px solid rgba(0,0,0,.08); }
+.qu-post:last-child { border-bottom: 0; }
+.qu-posttitle { font-family: var(--qu-sans); font-weight: 650; letter-spacing: -0.01em; }
+.qu-meta { font-family: var(--qu-sans); font-size: .9rem; color: rgba(0,0,0,.55); margin-top: .2rem; }
+.qu-excerpt { margin-top: .45rem; color: rgba(0,0,0,.72); }
+
+@media (prefers-color-scheme: dark) {
+  .qu-sub, .qu-meta { color: rgba(255,255,255,.58); }
+  .qu-btn { border-color: rgba(255,255,255,.18); color: rgba(255,255,255,.78); background: rgba(255,255,255,.03); }
+  .qu-btn:hover { border-color: rgba(255,255,255,.30); }
+  .qu-btn.primary { background: #fff; color:#000; border-color:#fff; }
+  .qu-post { border-bottom-color: rgba(255,255,255,.10); }
+  .qu-excerpt { color: rgba(255,255,255,.72); }
+}
