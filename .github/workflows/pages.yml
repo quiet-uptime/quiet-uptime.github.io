@@ -21,19 +21,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Ruby
+      - name: Set up Ruby (GitHub Pages compatible)
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.1'
           bundler-cache: true
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Diagnostics
+        run: |
+          ruby -v
+          bundle -v
+          bundle env || true
+
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production
-        run: bundle exec jekyll build --destination _site
+        run: bundle exec jekyll build --destination _site --trace
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
