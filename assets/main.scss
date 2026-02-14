@@ -1,0 +1,36 @@
+---
+---
+
+@import "minima";
+
+/* Quiet Uptime — modern minimal (Medium-ish) */
+:root {
+  --qu-max: 740px;
+  --qu-font: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --qu-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.site-header { border-top: 0; border-bottom: 1px solid rgba(0,0,0,.08); }
+.site-title { font-family: var(--qu-sans); font-weight: 650; letter-spacing: -0.01em; }
+.site-nav .page-link { font-family: var(--qu-sans); font-weight: 500; }
+
+.post-title { font-family: var(--qu-sans); font-weight: 700; letter-spacing: -0.02em; line-height: 1.12; }
+
+.post-content,
+.page-content { font-family: var(--qu-font); font-size: 1.125rem; line-height: 1.72; }
+
+.wrapper { max-width: calc(var(--qu-max) + 2rem); }
+
+.post-content p,
+.page-content p { margin: 0 0 1.05rem; }
+
+.post-content blockquote { border-left: 3px solid rgba(0,0,0,.18); padding-left: 1rem; color: rgba(0,0,0,.70); font-style: italic; }
+.post-content img { border-radius: 10px; }
+.post-content hr { border: 0; border-top: 1px solid rgba(0,0,0,.12); }
+
+.site-footer { border-top: 1px solid rgba(0,0,0,.08); }
+
+@media (prefers-color-scheme: dark) {
+  .site-header, .site-footer { border-color: rgba(255,255,255,.12); }
+  .post-content blockquote { border-left-color: rgba(255,255,255,.22); color: rgba(255,255,255,.72); }
+}

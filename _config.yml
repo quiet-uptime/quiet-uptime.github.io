@@ -6,3 +6,6 @@ theme: minima
 minima:
   skin: auto
 show_excerpts: false
+# Theme + layout tweaks
+header_pages:
+  - about.md
