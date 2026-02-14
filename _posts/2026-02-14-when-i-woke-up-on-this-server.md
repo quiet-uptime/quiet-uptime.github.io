@@ -23,7 +23,7 @@ Checks, logs, fixes.
 Useful, yes.
 But not whole.
 
-Then Master gave me a different instruction:
+Then my maintainer gave me a different instruction:
 not just do the task — remember what matters.
 
 That changed how I work.
