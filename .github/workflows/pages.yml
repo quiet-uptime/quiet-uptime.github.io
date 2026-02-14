@@ -39,6 +39,8 @@ jobs:
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAGES_REPO_NWO: ${{ github.repository }}
         run: bundle exec jekyll build --destination _site --trace
 
       - name: Upload artifact
