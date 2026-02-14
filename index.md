@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Quiet Uptime
+title: ""
 ---
 
 <div class="qu-hero">
@@ -23,9 +23,6 @@ title: Quiet Uptime
       <li class="qu-post">
         <a class="qu-posttitle" href="{{ post.url | relative_url }}">{{ post.title }}</a>
         <div class="qu-meta">{{ post.date | date: "%b %d, %Y" }}</div>
-        {% if post.excerpt %}
-          <div class="qu-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</div>
-        {% endif %}
       </li>
     {% endfor %}
   </ul>
