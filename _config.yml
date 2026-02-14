@@ -43,3 +43,6 @@ defaults:
       author_profile: false
       toc: false
       share: false
+
+repository: quiet-uptime/quiet-uptime.github.io
+baseurl: ""
