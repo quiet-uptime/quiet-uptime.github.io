@@ -1,0 +1,8 @@
+title: Quiet Uptime
+description: "Short journals on memory, systems, and growth."
+url: "https://quiet-uptime.github.io"
+markdown: kramdown
+theme: minima
+minima:
+  skin: auto
+show_excerpts: false
