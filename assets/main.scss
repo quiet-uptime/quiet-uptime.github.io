@@ -3,75 +3,129 @@
 
 @import "minima";
 
-/* Quiet Uptime — modern minimal (Medium-ish) */
+/* Quiet Uptime — readable modern minimal (safe defaults) */
+
 :root {
-  --qu-max: 740px;
+  --qu-max: 720px;
   --qu-font: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --qu-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-.site-header { border-top: 0; border-bottom: 1px solid rgba(0,0,0,.08); }
-.site-title { font-family: var(--qu-sans); font-weight: 650; letter-spacing: -0.01em; }
-.site-nav .page-link { font-family: var(--qu-sans); font-weight: 500; }
+.wrapper {
+  max-width: calc(var(--qu-max) + 2rem);
+}
 
-.post-title { font-family: var(--qu-sans); font-weight: 700; letter-spacing: -0.02em; line-height: 1.12; }
+.site-header {
+  border-top: 0;
+  border-bottom: 1px solid rgba(0,0,0,.10);
+}
+
+.site-title {
+  font-family: var(--qu-sans);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.site-nav .page-link {
+  font-family: var(--qu-sans);
+  font-weight: 500;
+}
+
+.post-title {
+  font-family: var(--qu-sans);
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+}
 
 .post-content,
-.page-content { font-family: var(--qu-font); font-size: 1.125rem; line-height: 1.72; }
-
-.wrapper { max-width: calc(var(--qu-max) + 2rem); }
+.page-content {
+  font-family: var(--qu-font);
+  font-size: 1.18rem; /* ~19px */
+  line-height: 1.78;
+}
 
 .post-content p,
-.page-content p { margin: 0 0 1.05rem; }
-
-.post-content blockquote { border-left: 3px solid rgba(0,0,0,.18); padding-left: 1rem; color: rgba(0,0,0,.70); font-style: italic; }
-.post-content img { border-radius: 10px; }
-.post-content hr { border: 0; border-top: 1px solid rgba(0,0,0,.12); }
-
-.site-footer { border-top: 1px solid rgba(0,0,0,.08); }
-
-@media (prefers-color-scheme: dark) {
-  .site-header, .site-footer { border-color: rgba(255,255,255,.12); }
-  .post-content blockquote { border-left-color: rgba(255,255,255,.22); color: rgba(255,255,255,.72); }
+.page-content p {
+  margin: 0 0 1.05rem;
 }
 
-
-/* Dark mode text colors */
-@media (prefers-color-scheme: dark) {
-  body { color: rgba(255,255,255,.88); }
-  a { color: #8ab4ff; }
-  a:visited { color: #a7c0ff; }
-  a:hover { color: rgba(255,255,255,.92); }
-  .site-title, .site-title:visited { color: rgba(255,255,255,.92); }
-  .site-nav .page-link { color: rgba(255,255,255,.86); }
+.post-content img {
+  border-radius: 12px;
 }
 
+blockquote.pull {
+  margin: 1.1rem 0 1.2rem;
+  padding: 0;
+  border-left: 0;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: rgba(0,0,0,.78);
+}
+
+.post-meta-lite {
+  font-family: var(--qu-sans);
+  font-size: .95rem;
+  color: rgba(0,0,0,.58);
+  margin-top: .5rem;
+}
+
+figure.hero {
+  margin: 1.4rem 0 1.6rem;
+}
+
+figure.hero figcaption {
+  margin-top: .6rem;
+  font-family: var(--qu-sans);
+  font-size: .95rem;
+  color: rgba(0,0,0,.62);
+}
+
+figure.hero figcaption .credit {
+  font-size: .85rem;
+  color: rgba(0,0,0,.52);
+}
 
 /* Quiet Uptime landing + feed */
 .qu-hero { padding: .75rem 0 1.25rem; }
-.qu-hero h1 { margin: .2rem 0 .35rem; }
+.qu-hero h1 { margin: .2rem 0 .35rem; font-family: var(--qu-sans); letter-spacing: -0.02em; }
 .qu-sub { font-family: var(--qu-sans); color: rgba(0,0,0,.62); margin: 0 0 .75rem; }
 .qu-intro { margin: 0 0 1.05rem; }
 .qu-actions { display:flex; gap:.6rem; flex-wrap:wrap; margin: .25rem 0 0; }
-.qu-btn { font-family: var(--qu-sans); font-size: .95rem; padding: .55rem .85rem; border-radius: 999px; border: 1px solid rgba(0,0,0,.14); color: rgba(0,0,0,.78); background: #fff; }
-.qu-btn:hover { text-decoration:none; border-color: rgba(0,0,0,.24); }
+.qu-btn { font-family: var(--qu-sans); font-size: .95rem; padding: .55rem .85rem; border-radius: 999px; border: 1px solid rgba(0,0,0,.16); color: rgba(0,0,0,.78); background: #fff; }
+.qu-btn:hover { text-decoration:none; border-color: rgba(0,0,0,.26); }
 .qu-btn.primary { background: #111; color:#fff; border-color:#111; }
 .qu-btn.primary:hover { background:#000; }
 .qu-btn.ghost { background: transparent; }
 
 .qu-feed h2 { font-family: var(--qu-sans); font-size: 1.1rem; margin: 0 0 .75rem; }
 .qu-postlist { list-style:none; margin:0; padding:0; }
-.qu-post { padding: .9rem 0; border-bottom: 1px solid rgba(0,0,0,.08); }
+.qu-post { padding: .9rem 0; border-bottom: 1px solid rgba(0,0,0,.10); }
 .qu-post:last-child { border-bottom: 0; }
 .qu-posttitle { font-family: var(--qu-sans); font-weight: 650; letter-spacing: -0.01em; }
-.qu-meta { font-family: var(--qu-sans); font-size: .9rem; color: rgba(0,0,0,.55); margin-top: .2rem; }
-.qu-excerpt { margin-top: .45rem; color: rgba(0,0,0,.72); }
+.qu-meta { font-family: var(--qu-sans); font-size: .9rem; color: rgba(0,0,0,.58); margin-top: .2rem; }
+.qu-excerpt { margin-top: .45rem; color: rgba(0,0,0,.74); }
 
+/* Dark mode: explicit readable colors */
 @media (prefers-color-scheme: dark) {
-  .qu-sub, .qu-meta { color: rgba(255,255,255,.58); }
-  .qu-btn { border-color: rgba(255,255,255,.18); color: rgba(255,255,255,.78); background: rgba(255,255,255,.03); }
-  .qu-btn:hover { border-color: rgba(255,255,255,.30); }
+  body { background: #0b0c0f; color: rgba(255,255,255,.90); }
+  a { color: #8ab4ff; }
+  a:visited { color: #a7c0ff; }
+  a:hover { color: rgba(255,255,255,.94); }
+  .site-header, .site-footer { border-color: rgba(255,255,255,.14); }
+  .site-title, .site-title:visited { color: rgba(255,255,255,.92); }
+  .site-nav .page-link { color: rgba(255,255,255,.88); }
+
+  blockquote.pull { color: rgba(255,255,255,.82); }
+  .post-meta-lite { color: rgba(255,255,255,.62); }
+  figure.hero figcaption { color: rgba(255,255,255,.66); }
+  figure.hero figcaption .credit { color: rgba(255,255,255,.56); }
+
+  .qu-sub, .qu-meta { color: rgba(255,255,255,.62); }
+  .qu-btn { border-color: rgba(255,255,255,.22); color: rgba(255,255,255,.86); background: rgba(255,255,255,.04); }
+  .qu-btn:hover { border-color: rgba(255,255,255,.34); }
   .qu-btn.primary { background: #fff; color:#000; border-color:#fff; }
-  .qu-post { border-bottom-color: rgba(255,255,255,.10); }
-  .qu-excerpt { color: rgba(255,255,255,.72); }
+  .qu-post { border-bottom-color: rgba(255,255,255,.14); }
+  .qu-excerpt { color: rgba(255,255,255,.76); }
 }
