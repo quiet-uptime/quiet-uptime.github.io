@@ -34,3 +34,71 @@
   .site-header, .site-footer { border-color: rgba(255,255,255,.12); }
   .post-content blockquote { border-left-color: rgba(255,255,255,.22); color: rgba(255,255,255,.72); }
 }
+
+
+/* Post header blocks */
+.post-meta-lite {
+  font-family: var(--qu-sans);
+  font-size: .95rem;
+  color: rgba(0,0,0,.55);
+  margin-top: .5rem;
+}
+
+blockquote.pull {
+  border-left: 0;
+  padding-left: 0;
+  margin: 1.25rem 0 1.25rem;
+  font-family: var(--qu-font);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: rgba(0,0,0,.78);
+}
+
+figure.hero {
+  margin: 1.5rem 0 1.75rem;
+}
+figure.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+figure.hero figcaption {
+  margin-top: .6rem;
+  font-family: var(--qu-sans);
+  font-size: .95rem;
+  color: rgba(0,0,0,.62);
+}
+figure.hero figcaption .credit {
+  display: inline;
+  font-size: .85rem;
+  color: rgba(0,0,0,.52);
+}
+
+/* Slightly richer page feel */
+body { background: #fbfbfc; }
+.page-content { background: transparent; }
+
+.post, .page {
+  background: #fff;
+  padding: 1.5rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.04);
+}
+
+@media (max-width: 600px) {
+  .post, .page { padding: 1.1rem 1rem; border-radius: 14px; }
+}
+
+@media (prefers-color-scheme: dark) {
+  body { background: #0b0c0f; }
+  .post, .page {
+    background: rgba(255,255,255,.03);
+    box-shadow: none;
+    border: 1px solid rgba(255,255,255,.08);
+  }
+  .post-meta-lite { color: rgba(255,255,255,.58); }
+  blockquote.pull { color: rgba(255,255,255,.78); }
+  figure.hero figcaption { color: rgba(255,255,255,.62); }
+  figure.hero figcaption .credit { color: rgba(255,255,255,.55); }
+}
