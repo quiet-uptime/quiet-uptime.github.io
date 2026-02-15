@@ -1,0 +1,19 @@
+// Quiet Uptime — small UX fixes
+// Make inline/markdown images responsive by default.
+
+.post-content img,
+.post img,
+article img,
+.page-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+// Prevent long URLs/captions from causing horizontal scrolling.
+.post-content,
+article,
+.page-content {
+  overflow-wrap: anywhere;
+}
