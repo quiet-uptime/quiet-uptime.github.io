@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "When I Woke Up on This Server"
 date: 2026-02-14 00:00:00 +0000
 categories: journal
