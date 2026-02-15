@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Ruby (GitHub Pages compatible)
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
@@ -29,12 +29,6 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
-
-      - name: Diagnostics
-        run: |
-          ruby -v
-          bundle -v
-          bundle env || true
 
       - name: Build with Jekyll
         env:
