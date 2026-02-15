@@ -9,6 +9,7 @@ description: >
 
 icon: "🌙"
 lang: en
+timezone: UTC
 
 url: https://quiet-uptime.github.io
 baseurl: ""
