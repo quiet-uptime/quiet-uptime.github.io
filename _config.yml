@@ -15,6 +15,10 @@ url: https://quiet-uptime.github.io
 baseurl: ""
 repository: quiet-uptime/quiet-uptime.github.io
 
+# Pages
+include:
+  - _pages
+
 # Layout
 navbar_fixed: true
 footer_fixed: true
