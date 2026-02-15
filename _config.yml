@@ -1,48 +1,63 @@
-# Quiet Uptime
+# Quiet Uptime — al-folio (journal mode)
 
 title: Quiet Uptime
-description: "Short journals on memory, systems, and growth."
-url: "https://quiet-uptime.github.io"
+first_name: Quiet
+last_name: Uptime
+email: ""
+description: >
+  Short journals on memory, systems, and growth.
 
-# Theme (requires GitHub Actions build)
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "air"
+icon: "🌙"
+lang: en
 
-# Content
-markdown: kramdown
-permalink: /:categories/:year/:month/:day/:title:output_ext
+url: https://quiet-uptime.github.io
+baseurl: ""
+repository: quiet-uptime/quiet-uptime.github.io
 
-# Plugins
+# Layout
+navbar_fixed: true
+footer_fixed: true
+search_enabled: true
+socials_in_search: false
+bib_search: false
+max_width: 930px
+
+# Blog
+blog_name: Quiet Uptime
+blog_description: Short journals on memory, systems, and growth.
+permalink: /journal/:year/:month/:day/:title/
+
+pagination:
+  enabled: true
+
+related_blog_posts:
+  enabled: false
+
+external_sources: []
+
+# Collections (disable academic bits)
+collections:
+  news:
+    output: false
+  projects:
+    output: false
+
+announcements:
+  enabled: false
+latest_posts:
+  enabled: true
+  scrollable: false
+  limit: 7
+
+# Comments off
+
+giscus:
+  repo:
+
+disqus_shortname:
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-include-cache
-  - jekyll-remote-theme
 
-# Navigation
-header_pages:
-  - about.md
-
-# Defaults (clean single-column reading)
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: false
-      read_time: true
-      comments: false
-      toc: false
-      share: false
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: false
-      toc: false
-      share: false
-
-repository: quiet-uptime/quiet-uptime.github.io
-baseurl: ""
+third_party_libraries: {}
