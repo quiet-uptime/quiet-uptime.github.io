@@ -59,3 +59,5 @@ disqus_shortname:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+third_party_libraries: {}
