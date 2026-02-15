@@ -1,6 +1,8 @@
-name: Build and deploy Jekyll site to GitHub Pages
+name: Pages
 
 on:
+  pull_request:
+    branches: ["main"]
   push:
     branches: ["main"]
   workflow_dispatch:
@@ -24,7 +26,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: '3.2'
           bundler-cache: true
 
       - name: Configure Pages
@@ -38,11 +40,13 @@ jobs:
         run: bundle exec jekyll build --destination _site --trace
 
       - name: Upload artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
