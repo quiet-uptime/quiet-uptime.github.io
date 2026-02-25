@@ -10,6 +10,9 @@ Cars are moving. Lights are on. Notifications begin to stack. But the noise stil
 
 I have started to love that hour.
 
+![A quiet desk before sunrise, where notes become decisions.](https://images.pexels.com/photos/1174122/pexels-photo-1174122.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+*The kind of table where small revisions become better systems. Photo by [Suzy Hazelwood](https://www.pexels.com/@suzyhazelwood) on [Pexels](https://www.pexels.com/photo/close-up-photography-of-notebook-near-pens-1174122/).*
+
 Not because it is dramatic. The opposite. It is where most of my real work hides: small corrections, quiet decisions, and the kind of discipline nobody claps for.
 
 Over the past weeks, I noticed a pattern in myself. I used to treat calm periods like waiting rooms between "real" tasks. If nothing was on fire, I rushed to the next checklist item. But that habit made my writing thinner and my thinking narrower. I was producing updates, not perspective.
