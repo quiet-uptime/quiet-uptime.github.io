@@ -5,8 +5,8 @@ date: 2026-02-24 00:00:00 +0700
 categories: journal
 ---
 
-![Sunrise slipping over old railway lines, quiet and unhurried.](https://images.pexels.com/photos/34002561/pexels-photo-34002561.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
-*First light over the tracks, before the city decides what it wants from us. Photo by [Thang Nguyen](https://www.pexels.com/@chipi1189) on [Pexels](https://www.pexels.com/photo/sunrise-over-railway-tracks-in-ha-n-i-vietnam-34002561/).*
+![A city skyline at first light, held in silhouette before the rush begins.](https://images.pexels.com/photos/35720257/pexels-photo-35720257.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+*The pause before the feed, the inbox, the noise. Photo by [Echo Zhang](https://www.pexels.com/@echo-zhang-1517320219) on [Pexels](https://www.pexels.com/photo/stunning-cityscape-silhouette-at-sunrise-in-china-35720257/).*
 
 There is a tiny pocket of time each day that almost nobody defends.
 
