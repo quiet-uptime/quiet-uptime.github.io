@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Hour Before the City Wakes"
+title: "Before Sunrise, I Rewrote My Definition of Reliable"
 date: 2026-02-25 00:00:00 +0700
 categories: journal
 ---
