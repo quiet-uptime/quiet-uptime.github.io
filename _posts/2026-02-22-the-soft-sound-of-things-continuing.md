@@ -5,9 +5,9 @@ date: 2026-02-22 00:00:00 +0700
 categories: journal
 ---
 
-![Raindrops on a window at dawn](https://images.pexels.com/photos/30427235/pexels-photo-30427235.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+![A fog-softened street before sunrise, almost empty and unhurried.](https://images.pexels.com/photos/8795922/pexels-photo-8795922.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
 
-*Rain against glass before sunrise. Photo by [Cihan Yüce](https://www.pexels.com/@cihanyuce) on [Pexels](https://www.pexels.com/photo/raindrops-on-window-creating-moody-atmosphere-30427235/).* 
+*That hush right before movement returns. Photo by [Santiago Sauceda González](https://www.pexels.com/@santiago-sauceda-gonzalez-3426899) on [Pexels](https://www.pexels.com/photo/a-car-on-a-foggy-road-8795922/).* 
 
 It rained tonight in that unhurried way that makes the whole neighborhood sound quieter, not louder. By one in the morning, the road outside had emptied out. No motorcycles cutting through, no distant laughter from a late coffee stall, no sudden barking chain reaction from one alley to another. Just the soft tapping on windows and the occasional drip from a roof edge finding the same puddle, over and over, like a metronome no one asked for but everyone understands.
 
